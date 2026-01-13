@@ -1,0 +1,58 @@
+/* Contenedor del login */
+section {
+    width: 320px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Segoe UI', sans-serif;
+    margin: auto;
+    margin-top: 15%;
+}
+
+/* Título */
+section h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Inputs */
+section input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+section input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* Botón */
+section button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+section button:hover {
+    background: #4338ca;
+    transform: translateY(-2px);
+}
+
+section button:active {
+    transform: translateY(0);
+}
