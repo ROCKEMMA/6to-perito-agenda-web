@@ -7,14 +7,14 @@ div[id] {
 
     font-family: monospace;
 
-    padding: 12px 16px;
+    padding: 5px 16px;
     box-sizing: border-box;
 
     background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
     transition: background 0.2s ease, transform 0.15s ease;
 }
 
@@ -25,10 +25,10 @@ div[id]:hover {
 
 /* Icono */
 .button-image {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 
-    background-color: #201f36;
+    background-color: #191824;
     border-radius: 8px;
 
     display: flex;
