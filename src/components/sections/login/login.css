@@ -36,7 +36,7 @@ section input:focus {
 }
 
 /* Botón */
-section button {
+section a {
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -46,13 +46,14 @@ section button {
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
 }
 
-section button:hover {
+section a:hover {
     background: #4338ca;
     transform: translateY(-2px);
 }
 
-section button:active {
+section a:active {
     transform: translateY(0);
 }

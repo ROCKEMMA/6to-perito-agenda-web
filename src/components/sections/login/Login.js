@@ -13,8 +13,10 @@ let login = function () {
     password.type = "password";
     password.placeholder = "Password";
 
-    let button = document.createElement("button");
+    let button = document.createElement("a");
+
     button.innerHTML = "Iniciar Sesión";
+    button.href = "src/app.html";
 
     login.appendChild(h3);
     login.appendChild(user);
