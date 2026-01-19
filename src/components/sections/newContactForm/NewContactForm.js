@@ -1,4 +1,6 @@
-import { ContactList } from "../contactos/db.js";
+import { saveContactsToStorage } from "../contactos/localstorage.js";
+import { getContactsFromStorage } from "../contactos/localstorage.js";
+
 function NewContactForm() {
     let form = document.createElement("form");
     form.className = "new-contact-form";
@@ -54,16 +56,18 @@ function NewContactForm() {
     form.addEventListener("submit", (e) => {
         e.preventDefault();
 
+        let contactos = getContactsFromStorage();
+
         let contacto = {
             nombre: inputNombre.value,
             telefono: inputTelefono.value
         };
 
-        console.log(contacto);
-        ContactList.push(contacto);
+        contactos.push(contacto);
+
+        saveContactsToStorage(contactos);
 
     });
-
 
     return form;
 }
